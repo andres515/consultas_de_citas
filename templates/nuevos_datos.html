@@ -1,38 +1,41 @@
 {% extends "layout.html" %}
 
-    {% block content %}
+{% block title %} Nuevos datos {% endblock %}
 
-    <section class="form-register">
-        <h4>Agrege nuevos datos sobre tus<br>
-        clientes</h4>
-        <input class="controls" type="text" name="numerodocumento" id="numerodocumento" placeholder="Numero de documento">
-        <input class="controls" type="text" name="nombres" id="nombres" placeholder="Nombres">
-        <input class="controls" type="text" name="apellidos" id="apellidos" placeholder="Apellidos">
-        <input class="controls" type="email" name="correo" id="correo" placeholder="Fecha de nacimiento">
-        <input class="controls" type="text" name="ciudad" id="ciudad" placeholder="Ciudad actual">
-        <input class="controls" type="text" name="direccion" id="direccion" placeholder="Direccion">
-        <input class="controls" type="text" name="telefono" id="telefono" placeholder="Telefono">
-        <input class="controls" type="text" name="civil" id="civil" placeholder="Estado civil">
-        <input class="controls" type="text" name="motivo" id="motivo" placeholder="Motivo de consulta">
-        <input class="controls" type="email" name="recomendaciones" id="recomendaciones" placeholder="Recomendaciones">
-        <p><a href="#">Estos datos se guardaran previmente en una base de datos</a></p>
-        <input class="botons" type="submit" value="Registrar">
-      </section>
+{% block content %}
 
-    <h1 class="titulo1">Informacion que es recogina</h1>
-    
-    <p class="contenidodetitulo">Nuestro sitio wed podra recoger informacion<br>
-        personal por ejemplo: Nombre, informacion de<br>
-        contactos como su direccion de correo electronico<br>
-        e informacion demografica. Asi mismo cuando<br>
-        sea necesario podra ser requerida informacion<br>
-        especifica para procesar algun pedido o realizar<br>
-        una entrega o facturacion.</p>
+<div class="form-register">
+  <h4>Agrege nuevos datos sobre tus<br>clientes</h4>
+  <form method="POST" action="#">
+    <input class="controls" type="text" name="numerodocumento" id="numerodocumento" placeholder="Numero de documento">
+    <input class="controls" type="text" name="nombres" id="nombres" placeholder="Nombres">
+    <input class="controls" type="text" name="apellidos" id="apellidos" placeholder="Apellidos">
+    <input class="controls" type="text" name="email" id="correo" placeholder="Correo">
+    <input class="controls" type="text" name="ciudad" id="ciudad" placeholder="Ciudad actual">
+    <input class="controls" type="datetime" name="fecha" id="fecha" placeholder="Fecha de nacimiento">
+    <input class="controls" type="text" name="telefono" id="telefono" placeholder="Telefono">
+    <input class="controls" type="text" name="civil" id="civil" placeholder="Estado civil">
+    <input class="controls" type="text" name="motivo" id="motivo" placeholder="Motivo de consulta">
+    <input class="controls" type="text" name="recomendaciones" id="recomendaciones" placeholder="Recomendaciones">
+    <p><a href="#">Estos datos se guardaran previmente en una base de datos</a></p>
+    <input class="botons" type="submit" value="Registrar">
+  </form>
+</div>
 
-    <a class="botonbuscar" href="/buscar_registro">BUSCA HISTORIAL DE CLIENTES</a>
+<h1 class="titulo1">Informacion que es recogina</h1>
 
-    <footer>
-        
-    </footer>
+<p class="contenidodetitulo">Nuestro sitio wed podra recoger informacion<br>
+  personal por ejemplo: Nombre, informacion de<br>
+  contactos como su direccion de correo electronico<br>
+  e informacion demografica. Asi mismo cuando<br>
+  sea necesario podra ser requerida informacion<br>
+  especifica para procesar algun pedido o realizar<br>
+  una entrega o facturacion.</p>
 
-    {% endblock %}
+<a class="botonbuscar" href="/buscar_registro">BUSCA HISTORIAL DE CLIENTES</a>
+
+<footer>
+
+</footer>
+
+{% endblock %}
