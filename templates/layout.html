@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="logo" href="/static/img/icon.png" sizes="19x19">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css' ) }}">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500;700&family=Roboto:wght@500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@1,400;1,700&family=Noto+Sans+JP:wght@500;700&family=Roboto:wght@500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@1,700&family=Noto+Sans+JP:wght@500;700&family=Roboto:wght@500;700&display=swap" rel="stylesheet">
+    <title>inicio</title>
+</head>
+<body>
+    <header>
+        <div id="icono">
+            <a href="/inicio">
+                <img src="/static/img/logo.png" title="logo">
+            </a>
+        </div>
+        
+        <div>
+            <a class="iniciarsesion" href="/inicio_sesion">Iniciar sesion</a>
+            <a class="crearcuenta" href="/registrarme">Crear cuenta</a>
+            <a class="aliados" href="https://www.asmetsalud.com/">Aliados</a>
+            <a class="sobrenosotros" href="https://monitoreo.sisben.gov.co/Publico/Login">Sobre nosotros</a>
+        </div>
+    </header>
+
+    {% block content %}
+    {% endblock %}
+
+</body>
+</html>

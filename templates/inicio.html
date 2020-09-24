@@ -1,0 +1,28 @@
+{% extends "layout.html" %}
+
+    {% block content %}
+    <div id="reloj" style="text-align:center;padding:1em 0;">
+        <h3>
+            <a style="text-decoration:none;" href="https://www.zeitverschiebung.net/es/country/co">
+                <span>Hora actual en:</span>
+                <h1 class="pais"><br/>Colombia</h1></a>
+        </h3> <iframe
+            src="https://www.zeitverschiebung.net/clock-widget-iframe-v2?language=es&size=medium&timezone=America%2FBogota"
+            width="100%" height="115" frameborder="0" seamless>
+        </iframe>
+    </div>
+
+    <img class="secretaria" src="/static/img/secretaria.png" title="secretaria">
+    
+    <h2 class="titulo">Agrega pacientes o<br>
+    usuarios</h2>
+ 
+    <img class="logoletra" src="/static/img/logo2.png" title="logo2">
+
+    <p class="descripcion">Ya puedes agregar datos y descripciones<br>
+    sobre tus cliente, buscar registros y<br>
+    darle prorioridad a la atencion de sus<br>
+    clientes mas rapido y seguro que nunca</p>
+    
+    <a class="boton" href="/nuevos_datos">Agregar datos ahora</a>
+    {% endblock %}
